@@ -7,7 +7,8 @@ RSpec.describe SuperGood::SolidusTaxJar::API do
     let(:dummy_client) { instance_double ::Taxjar::Client }
 
     before do
-      ENV["TAXJAR_API_KEY"] = 'taxjar_api_token'
+      allow(ENV).to receive(:fetch).and_call_original
+      allow(ENV).to receive(:fetch).with("TAXJAR_API_KEY").and_return("taxjar_api_token")
     end
 
     it "sets the correct headers" do

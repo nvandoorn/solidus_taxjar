@@ -5,6 +5,8 @@
 - [#21](https://github.com/SuperGoodSoft/solidus_taxjar/pull/21) Migrated project to `solidus_dev_support`
 - [#22](https://github.com/SuperGoodSoft/solidus_taxjar/pull/22) Added support for TaxJar address validation API through `SuperGood::SolidusTaxJar::Addresses` class
 - [#34](https://github.com/SuperGoodSoft/solidus_taxjar/pull/34) Include API version in request headers
+- [#38](https://github.com/SuperGoodSoft/solidus_taxjar/pull/38) Added a rails engine to support future solidus backend UI
+- [#37](https://github.com/SuperGoodSoft/solidus_taxjar/pull/37) Added a basic Taxjar settings admin interface which displays the given Taxjar API key.
 
 ## v0.17.1
 
